@@ -1,0 +1,46 @@
+Print array Sum
+Easy
+40/40
+151 upvotes
++5 more companies
+Problem statement
+Given an array of length N, you need to find and print the sum of all elements of the array.
+
+Detailed explanation ( Input/output format, Notes, Images )
+Constraints :
+1 <= N <= 10^6
+Note for C++:
+It is advisable to declare an array with a size that can accommodate all the elements, considering that N has a maximum value of 10^5.
+Sample Input :
+3
+9 8 9
+Sample Output :
+26
+
+  Program
+  #include<iostream>
+#define max 1000006
+using namespace std;
+
+int main(){
+    /* Read input as specified in the question.
+     * Print output as specified in the question.
+     */
+    
+    long a[max],s=0,n;
+    
+            cin>>n;
+
+    for (int i = 0; i < n; i++) {
+      cin >> a[i];
+    }
+    for(int i=0;i<n;i++)
+    {
+        s=s+a[i];
+
+    } 
+    cout<<s;
+    return 0;
+}
+
+
